@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a0101;
+    color: #333;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #ff6347;
+    color: white;
+    padding: 1rem 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #0a0901;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.slideshow-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.slideshow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slideshow 15s infinite;
+}
+
+@keyframes slideshow {
+    0% { background-image: url('C:/Users/HP/Desktop/web design project/Jollof rice at a cost.jpeg'); }
+    20% { background-image: url('C:/Users/HP/Desktop/web design project/Africa dishes and recipes.jpeg'); }
+    40% { background-image: url('C:/Users/HP/Desktop/web design project/Spaghetti and Meatballs Recipe (VIDEO).jpeg'); }
+    60% { background-image: url('C:/Users/HP/Desktop/web design project/download.jpeg'); }
+    80% { background-image: url('C:/Users/HP/Desktop/web design project/Making Egusi Soup Recipe (with Assorted Meat) - Dream Africa.jpeg'); }
+    100% { background-image: url('C:/Users/HP/Desktop/web design project/Jollof rice at a cost.jpeg'); }
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #ff6347;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #0a0901;
+}
+
+/* Menu Section */
+.menu-section {
+    background-color: #ffffff5d;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.menu-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background-color: #ffffff93;
+    padding: 20px;
+    width: 250px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.menu-item span {
+    font-weight: bold;
+    color: #ff6347;
+    font-size: 1.2rem;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about-section {
+    padding: 50px 0;
+    background: linear-gradient(to right, #f4f4f4c7, #ffffff7e);
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #ff6347;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-text {
+    margin-bottom: 30px;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-text .highlight {
+    font-weight: bold;
+    color: #ff6347;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #ff6347;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #0a0901;
+}
+
+.testimonials {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ff6347;
+}
+
+blockquote {
+    font-size: 1rem;
+    color: #333;
+    margin: 10px 0;
+    padding-left: 20px;
+    border-left: 5px solid #ff6347;
+}
+
+blockquote cite {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #ffffffaf;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.contact-section form {
+    display: inline-block;
+    max-width: 400px;
+    text-align: left;
+}
+
+.contact-section label {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact-section input, 
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color: #f0e68c;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
